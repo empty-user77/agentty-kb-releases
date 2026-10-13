@@ -18,13 +18,6 @@ The script picks the build for your machine, checks it against the release's `SH
 it in `~/.agentty/bin/agentty-kb`. Nothing else is changed. Set `AGENTTY_KB_VERSION=v0.1.0` for a
 given version, or `AGENTTY_KB_DIR` for another folder.
 
-## Updates
-
-An agentty-kb installed this way updates itself: the server looks for a newer release a minute after
-it starts and every six hours, checks the download against `SHA256SUMS` and that it runs, puts it
-in place and restarts from it. `agentty-kb update` does it now; `AGENTTY_KB_NO_UPDATE=1` keeps the
-version you have. (0.1.0 predates this: run the install line once more to get it.)
-
 | Platform | File |
 |---|---|
 | macOS, Apple silicon | `agentty-kb-aarch64-apple-darwin.tar.gz` |
