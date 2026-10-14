@@ -27,13 +27,15 @@ given version, or `AGENTTY_KB_DIR` for another folder.
 
 ## Uninstall
 
-Turn the server off in the plugin, then:
+Uninstalling the Knowledge Base plugin in Agentty removes `agentty-kb` too (an Agentty that sends
+`plugin/uninstall`, with the server on). By hand (0.1.5 and later): turn the server off in the plugin, then
 
 ```sh
-rm -f ~/.agentty/bin/agentty-kb
+~/.agentty/bin/agentty-kb uninstall
 ```
 
-Knowledge bases stay in each repository's `.kb/` folder; delete those to remove them too.
+It removes the program, its login item and its files in `~/.agentty/kb`. Knowledge bases stay in
+each repository's `.kb/` folder and in `~/.agentty/kb/hubs`; delete those to remove them too.
 
 ## Licence
 
